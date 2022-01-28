@@ -10,8 +10,8 @@ class Button extends Component {
     }
 
     shouldComponentUpdate(nxtProps) {
-        const {handleClick: curr} = this.props;
-        const {handleClick: next} = nxtProps;
+        const {lang: curr} = this.props;
+        const {lang: next} = nxtProps;
 
         if (curr===next) {
             return false;
@@ -22,12 +22,12 @@ class Button extends Component {
     }
 
     render() {
-        console.log('Button');
+        
         return (
             <div>
                 <button
-                    onClick={()=>this.state.handleClick(this.state.lang)}>
-                    Change in bn-BD
+                    onClick={()=>this.props.handleClick(this.props.lang)}>
+                    Change in {this.props.lang}
                 </button> 
             </div>
         );

@@ -23,15 +23,23 @@ class Clock extends Component {
 
 
     render() {
-        console.log('Clock');
+
         let time = this.state.date.toLocaleTimeString(this.state.lang);
         return (
             <div>
                 <h1>Clock : {time}</h1>
-                <Button
-                    handleClick={this.handleClick}
-                    lang = {'bn-BD'}
-                />
+                {this.state.lang === 'bn-BD' ?
+                    <Button
+                        handleClick={this.handleClick}
+                        lang={'en-US'}
+                    />
+                    :
+                    <Button
+                        handleClick={this.handleClick}
+                        lang={'bn-BD'}
+                    />
+                }
+                <hr />
             </div>
         );
     }
