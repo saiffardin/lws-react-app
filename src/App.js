@@ -1,4 +1,5 @@
 import ClockList from "./component/ClockList";
+import Form from "./component/Form";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     return (
         <div>
             <h1>React App</h1>
-            <ClockList quantities={quantities}></ClockList>
+            <Form></Form>
         </div>
     );
 }
