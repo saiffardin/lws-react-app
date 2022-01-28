@@ -1,10 +1,6 @@
-import ClockList from "./component/ClockList";
 import Form from "./component/Form";
 
-
 function App() {
-
-    let quantities = [1,2,3];
 
     return (
         <div>
