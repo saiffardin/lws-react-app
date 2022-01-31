@@ -1,5 +1,4 @@
 import React from 'react';
-import withCounter from './HOC/withCounter';
 
 class HoverComponent extends React.Component {
 
@@ -7,8 +6,8 @@ class HoverComponent extends React.Component {
         const {count,handleIncrement} = this.props;
 
         const myStyle = {
-            display:"inline",
-            maxWidth:"fitContent",
+            display: "inline",
+            maxWidth: "fitContent",
             color: "red"
         }
 
@@ -20,4 +19,4 @@ class HoverComponent extends React.Component {
     }
 };
 
-export default withCounter(HoverComponent);
+export default HoverComponent;
